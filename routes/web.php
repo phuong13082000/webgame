@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
@@ -22,3 +23,6 @@ Route::resource('/category', CategoryController::class);
 
 //slider
 Route::resource('/slider', SliderController::class);
+
+//blog
+Route::resource('/blog', BlogController::class);

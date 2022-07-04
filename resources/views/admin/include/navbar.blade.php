@@ -22,6 +22,9 @@
                 <a class="nav-link" href="{{ route('slider.index') }}">Slider</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#">Dịch Vụ</a>
             </li>
             <li class="nav-item">
