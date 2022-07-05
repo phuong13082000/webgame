@@ -15,7 +15,7 @@
                 <div class="card-body">
                     <a href="{{ route('slider.create') }}" style="" class="btn btn-success">Thêm Slider</a>
 
-                    <table class="table table-striped" id="myTable">
+                    <table id="table" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
                                 <th>ID</th>
@@ -40,9 +40,11 @@
                                     </td>
                                     <td>
                                         @if ($sli->status == 0)
-                                            Không
+                                            <img src="{{ asset('frontend/img/dislike.png') }}" alt="dislike"
+                                                height="50px" weight="50px">
                                         @else
-                                            Có
+                                            <img src="{{ asset('frontend/img/like.png') }}" alt="like" height="50px"
+                                                weight="50px">
                                         @endif
                                     </td>
                                     <td>

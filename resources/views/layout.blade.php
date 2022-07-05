@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8" />
@@ -65,101 +65,25 @@
     <script src="{{ asset('frontend/js/slider.js') }}"></script>
     <script src="{{ asset('frontend/js/jquery.cookie.js') }}"></script>
     <script src="{{ asset('frontend/js/jquery-migrate.min.js') }}" type="text/javascript"></script>
-    <!--  <script src="frontend/js/bootstrap.min.js" type="text/javascript"></script> -->
-    <style>
-        .c-layout-header .c-navbar .c-mega-menu>.nav.navbar-nav>li>.c-link {
-            padding: 41px 10px 39px 10px
-        }
-
-        .ui-autocomplete {
-            max-height: 500px;
-            overflow-y: auto;
-            overflow-x: hidden;
-        }
-
-        .input-group-addon {
-            background-color: #FAFAFA;
-        }
-
-        .input-group .input-group-btn>.btn,
-        .input-group .input-group-addon {
-            background-color: #FAFAFA;
-        }
-
-        .modal {
-            text-align: center;
-        }
-
-        @media screen and (min-width: 768px) {
-            .modal:before {
-                display: inline-block;
-                vertical-align: middle;
-                content: " ";
-                height: 100%;
-            }
-        }
-
-        @media (min-width: 992px) and (max-width: 1200px) {
-            .c-layout-header-fixed.c-layout-header-topbar .c-layout-page {
-                margin-top: 245px;
-            }
-        }
-
-        @media screen and (max-width: 767px) {
-            .modal-dialog:before {
-                margin-top: 75px;
-                display: inline-block;
-                vertical-align: middle;
-                content: " ";
-                height: 100%;
-            }
-
-            .modal-dialog {
-                width: 100%;
-            }
-
-            .modal-content {
-                margin-right: 20px;
-            }
-        }
-
-        .modal-dialog {
-            display: inline-block;
-            text-align: left;
-        }
-
-        .mfp-wrap {
-            z-index: 20000 !important;
-        }
-
-        .c-content-overlay .c-overlay-wrapper {
-            z-index: 6;
-        }
-
-        .z7 {
-            z-index: 7 !important;
-        }
-    </style>
+    <script src="{{ asset('frontend/js/bootstrap.min.js') }}" type="text/javascript"></script>
     <link href="{{ asset('frontend/css/magnific.css') }}" rel="stylesheet" type="text/css" />
-    <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js'></script><link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js'></script>
+    <link rel='stylesheet prefetch'
+        href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
     <!-- Google Tag Manager -->
 
 </head>
 
-<body
-    class="c-layout-header-fixed c-layout-header-mobile-fixed c-layout-header-topbar c-layout-header-topbar-collapse">
+<body class="c-layout-header-fixed c-layout-header-mobile-fixed c-layout-header-topbar c-layout-header-topbar-collapse">
     <!-- Messenger Plugin chat Code -->
 
     <div id="fb-root"></div>
     <!-- Your Plugin chat code -->
 
-    <div class="h1tag"
-        style="font-size:0px;text-indent:-1000px;height:0;width:0;position: absolute;z-index:-1000;padding:0;margin:0">
-    </div>
+    <div class="h1tag" style="font-size:0px;text-indent:-1000px;height:0;width:0;position: absolute;z-index:-1000;padding:0;margin:0"></div>
 
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGBFK5Z" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGBFK5Z" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
@@ -172,13 +96,12 @@
                 <nav class="c-top-menu c-pull-left">
                     <ul class="c-icons c-theme-ul">
                         <li>
-                            <a href="https://www.facebook.com/CSKH-Tr%C3%B9m-C%C3%A1c-Game-Online-102414321166624/"
-                                target="_blank">
+                            <a href="#" target="_blank">
                                 <i class="icon-social-facebook"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank">
+                            <a href="#" target="_blank">
                                 <i class="icon-social-youtube"></i>
                             </a>
                         </li>
@@ -190,7 +113,7 @@
                 <nav class="c-top-menu c-pull-right m-t-10">
                     <ul class="c-links c-theme-ul">
                         <li>
-                            Hotline: <a href="tel:08.6969.3000">08.6969.3000 </a>
+                            Hotline: <a href="#">-- </a>
                         </li>
                     </ul>
                 </nav>
@@ -198,6 +121,7 @@
 
             </div>
         </div>
+
         <div class="c-navbar">
             <div class="container">
                 <!-- BEGIN: BRAND -->
@@ -206,12 +130,12 @@
                         <div style="margin: 0px;display: inline-block">
                             <a href="/" class="c-logo"
                                 alt="Shop bán nick game, acc game online avatar, đột kích – CF, liên minh huyền thoại lol , ngọc rồng, khí phách anh hùng - kpah giá rẻ, uy tín...">
-                                <img height="35px" src="/storage/images/HYFiUkwC3Y_1560966469.jpg" alt=""
-                                    class="c-desktop-logo">
-                                <img height="29px" src="/storage/images/HYFiUkwC3Y_1560966469.jpg" alt=""
-                                    class="c-desktop-logo-inverse">
-                                <img height="35px" src="/storage/images/HYFiUkwC3Y_1560966469.jpg" alt=""
-                                    class="c-mobile-logo"> </a>
+                                <img height="35px" src="{{ asset('/storage/images/HYFiUkwC3Y_1560966469.jpg') }}"
+                                    alt="" class="c-desktop-logo">
+                                <img height="29px" src="{{ asset('/storage/images/HYFiUkwC3Y_1560966469.jpg') }}"
+                                    alt="" class="c-desktop-logo-inverse">
+                                <img height="35px" src="{{ asset('/storage/images/HYFiUkwC3Y_1560966469.jpg') }}"
+                                    alt="" class="c-mobile-logo"> </a>
                         </div>
                         <button class="c-hor-nav-toggler" type="button" data-target=".c-mega-menu">
                             <span class="c-line"></span>
@@ -237,50 +161,40 @@
                     <!-- BEGIN: LAYOUT/HEADERS/MEGA-MENU -->
                     <!-- BEGIN: MEGA MENU -->
                     <!-- Dropdown menu toggle on mobile: c-toggler class can be applied to the link arrow or link itself depending on toggle mode -->
-                    <style>
-                        .c-menu-type-mega:hover {
-                            transition-delay: 1s;
-                        }
 
-                        .c-layout-header.c-layout-header-4 .c-navbar .c-mega-menu>.nav.navbar-nav>li:focus>a:not(.btn),
-                        .c-layout-header.c-layout-header-4 .c-navbar .c-mega-menu>.nav.navbar-nav>li:active>a:not(.btn),
-                        .c-layout-header.c-layout-header-4 .c-navbar .c-mega-menu>.nav.navbar-nav>li:hover>a:not(.btn) {
-                            color: #3a3f45;
-                            background: #FAFAFA;
-                        }
-                    </style>
                     <nav
                         class="c-mega-menu c-pull-right c-mega-menu-dark c-mega-menu-dark-mobile c-fonts-uppercase c-fonts-bold d-none hidden-xs hidden-sm">
                         <ul class="nav navbar-nav c-theme-nav">
-                            <li class="c-menu-type-classic"><a rel="" href="/"
-                                    class="c-link dropdown-toggle ">Trang chủ</a>
-                            </li>
-                            <li class="c-menu-type-classic"><a rel="" href="/dich-vu"
-                                    class="c-link dropdown-toggle ">Dịch
-                                    vụ game</a></li>
-                            <li class="c-menu-type-classic"><a rel="" href="/mua-the"
-                                    class="c-link dropdown-toggle ">Mua
-                                    thẻ</a></li>
                             <li class="c-menu-type-classic">
-                                <a rel="" href="#" class="c-link dropdown-toggle ">Nạp tiền<span
-                                        class="c-arrow c-toggler"></span></a>
+                                <a rel="" href="/" class="c-link dropdown-toggle ">Trang chủ</a>
+                            </li>
+                            <li class="c-menu-type-classic">
+                                <a rel="" href="/dich-vu" class="c-link dropdown-toggle ">Dịch vụ game</a>
+                            </li>
+                            <li class="c-menu-type-classic">
+                                <a rel="" href="/mua-the" class="c-link dropdown-toggle ">Mua thẻ</a>
+                            </li>
+                            <li class="c-menu-type-classic">
+                                <a rel="" href="#" class="c-link dropdown-toggle ">Nạp tiền
+                                    <span class="c-arrow c-toggler"></span>
+                                </a>
                                 <ul id="children-of-41" class="dropdown-menu c-menu-type-classic c-pull-left ">
-                                    <li class="c-menu-type-classic"><a rel="" href="/nap-the"
-                                            class="">Nạp thẻ
-                                            c&agrave;o</a></li>
-                                    <li class="c-menu-type-classic"><a rel="" href="/recharge"
-                                            class="">Nạp ATM tự động</a>
+                                    <li class="c-menu-type-classic">
+                                        <a rel="" href="/nap-the" class="">Nạp thẻc&agrave;o</a>
                                     </li>
-                                    <li class="c-menu-type-classic"><a target='_blank' rel=""
-                                            href="https://nick.vn/blog/huong-dan-nap-tien-tu-dong-bang-atm-vao-nickvn"
-                                            class="">Hướng dẫn nạp ATM tự động</a></li>
+                                    <li class="c-menu-type-classic">
+                                        <a rel="" href="/recharge" class="">Nạp ATM tự động</a>
+                                    </li>
+                                    <li class="c-menu-type-classic">
+                                        <a target='_blank' rel="" href="#"class="">Hướng dẫn nạp ATM tự động</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="c-menu-type-classic">
                                 <a rel="" href="#" class="c-link dropdown-toggle ">Tin tức<span
                                         class="c-arrow c-toggler"></span></a>
                                 <ul id="children-of-42" class="dropdown-menu c-menu-type-classic c-pull-left ">
-                                    <li class="c-menu-type-classic"><a rel="" href="/blog"
+                                    <li class="c-menu-type-classic"><a rel="" href="/blog-game"
                                             class="">Blog</a></li>
                                     <li class="c-menu-type-classic"><a rel="" href="/uy-tin-cua-shop"
                                             class="">UY T&Iacute;N
@@ -291,11 +205,9 @@
                                     <li class="c-menu-type-classic"><a rel="" href="/dich-vu-game"
                                             class="">Dịch Vụ Game</a>
                                     </li>
-                                    <li class="c-menu-type-classic"><a rel=""
-                                            href="https://nick.vn/blog/dieu-khoan-su-dung-website-nickvn"
+                                    <li class="c-menu-type-classic"><a rel="" href="#"
                                             class="">Điều khoản sử dụng website</a></li>
-                                    <li class="c-menu-type-classic"><a rel=""
-                                            href="https://nick.vn/blog/chinh-sach-tai-nickvn"
+                                    <li class="c-menu-type-classic"><a rel="" href="#"
                                             class="">Ch&iacute;nh s&aacute;ch tại Nick.vn</a>
                                     </li>
                                 </ul>
@@ -332,8 +244,7 @@
                                     <li class="c-menu-type-classic"><a rel="" href="/recharge"
                                             class="">Nạp ATM tự động</a>
                                     </li>
-                                    <li class="c-menu-type-classic"><a target='_blank' rel=""
-                                            href="https://nick.vn/blog/huong-dan-nap-tien-tu-dong-bang-atm-vao-nickvn"
+                                    <li class="c-menu-type-classic"><a target='_blank' rel="" href="#"
                                             class="">Hướng dẫn nạp ATM tự động</a></li>
                                 </ul>
                             </li>
@@ -352,20 +263,18 @@
                                     <li class="c-menu-type-classic"><a rel="" href="/dich-vu-game"
                                             class="">Dịch Vụ Game</a>
                                     </li>
-                                    <li class="c-menu-type-classic"><a rel=""
-                                            href="https://nick.vn/blog/dieu-khoan-su-dung-website-nickvn"
+                                    <li class="c-menu-type-classic"><a rel="" href="#"
                                             class="">Điều khoản sử dụng website</a></li>
-                                    <li class="c-menu-type-classic"><a rel=""
-                                            href="https://nick.vn/blog/chinh-sach-tai-nickvn"
+                                    <li class="c-menu-type-classic"><a rel="" href="#"
                                             class="">Ch&iacute;nh s&aacute;ch tại Nick.vn</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="/login"
+                            <li><a href="/dang-nhap-guest"
                                     class="c-btn-border-opacity-04 c-btn btn-no-focus c-btn-header btn btn-sm c-btn-border-1x c-btn-dark c-btn-circle c-btn-uppercase c-btn-sbold">
                                     <i class="icon-user"></i> Đăng nhập</a>
                             </li>
-                            <li><a href="/register"
+                            <li><a href="/dang-ky-guest"
                                     class="c-btn-border-opacity-04 c-btn btn-no-focus c-btn-header btn btn-sm c-btn-border-1x c-btn-dark c-btn-circle c-btn-uppercase c-btn-sbold">
                                     <i class="icon-key icons"></i> Đăng ký</a>
                             </li>
@@ -392,8 +301,9 @@
                 <div id="slide_banner" class="owl-carousel">
                     @foreach ($slider as $key => $sli)
                         <div class="item">
-                            <a href="#" alt="{{$sli->title}}">
-                                <img src="{{asset('uploads/slider/'.$sli->image)}}" width="100%" height="450px" alt="{{$sli->title}}">
+                            <a href="#" alt="{{ $sli->title }}">
+                                <img src="{{ asset('uploads/slider/' . $sli->image) }}" width="100%"
+                                    height="450px" alt="{{ $sli->title }}">
                             </a>
                         </div>
                     @endforeach

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blogs;
 use App\Models\Category;
 use App\Models\Slider;
 use Illuminate\Http\Request;
@@ -23,11 +24,18 @@ class IndexController extends Controller
         return view('pages.services',  compact('slider'));
     }
 
+    public function dichvu_game($slug)
+    {
+        $slider = Slider::orderBy('id', 'DESC')->get();
+
+        return view('pages.services',  compact('slider'));
+    }
+
     public function dichvucon($slug)
     {
         $slider = Slider::orderBy('id', 'DESC')->get();
 
-        return view('pages.sub_services', compact($slug, 'slider'));
+        return view('pages.sub_services', compact('slider'));
     }
 
     public function danhmuc_game($slug)
@@ -43,4 +51,13 @@ class IndexController extends Controller
 
         return view('pages.sub_category',  compact('slider'));
     }
+
+    public function blog()
+    {
+        $blog = Blogs::orderBy('id', 'DESC')->get();
+
+        return view('pages.blog', compact('blog'));
+    }
+
+
 }

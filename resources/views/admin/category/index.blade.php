@@ -15,15 +15,15 @@
                 <div class="card-body">
                     <a href="{{ route('category.create') }}" style="" class="btn btn-success">Thêm danh mục game</a>
 
-                    <table class="table table-striped" id="myTable">
+                    <table id="table" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
                                 <th>ID</th>
                                 <th>Tên Danh Mục</th>
                                 <th>Slug</th>
                                 <th>Mô Tả</th>
-                                <th>Hiển Thị</th>
                                 <th>Hình Ảnh</th>
+                                <th>Hiển Thị</th>
                                 <th>Quản Lý</th>
                             </tr>
                         </thead>
@@ -35,15 +35,17 @@
                                     <td>{{ $cate->slug }}</td>
                                     <td>{{ $cate->description }}</td>
                                     <td>
-                                        @if ($cate->status == 0)
-                                            Không
-                                        @else
-                                            Có
-                                        @endif
-                                    </td>
-                                    <td>
                                         <img src="{{ asset('uploads/category/' . $cate->image) }}" height="150px"
                                             weight="150px">
+                                    </td>
+                                    <td>
+                                        @if ($cate->status == 0)
+                                            <img src="{{ asset('frontend/img/dislike.png') }}" alt="dislike"
+                                                height="50px" weight="50px">
+                                        @else
+                                            <img src="{{ asset('frontend/img/like.png') }}" alt="like" height="50px"
+                                                weight="50px">
+                                        @endif
                                     </td>
                                     <td>
                                         <form action="{{ route('category.destroy', [$cate->id]) }}" method="POST">
@@ -56,6 +58,7 @@
                                         </form>
                                         <a href="{{ route('category.edit', $cate->id) }}" class="btn btn-warning">Sửa</a>
                                     </td>
+
                                 </tr>
                             @endforeach
                         </tbody>

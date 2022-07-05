@@ -56,7 +56,7 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Description</label>
-                            <textarea class="form-control" name="description">{{ $category->description }}</textarea>
+                            <textarea class="form-control" id="desc_category" name="description">{{ $category->description }}</textarea>
 
                         </div>
                         <div class="form-group">
