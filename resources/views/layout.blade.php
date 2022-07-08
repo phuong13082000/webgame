@@ -8,7 +8,7 @@
         content="Web bán nick game, nick ngọc rồng - nro, ninja - nso, avatar, hải tặc - làng lá - liên quân - lol, đột kích - CF, truy kích, army2, hiệp sĩ giá cực rẻ nhanh tay lên">
     <meta name="keywords"
         content="Web mua bán nick game, Web mua bán Acc Game, Shop mua bán Nick game,  Ngọc rồng - nro, ninja school - nso, avatar, Hải Tặc - HTTH, Làng Lá - LLPLK, Liên Quân - LQM, Liên Minh - LMHT - LOL , Đột kích - CF, Truy Kích, Army 2, Hiệp Sĩ - HSO, nick vip, giá rẻ , uy tín">
-    <link rel="shortcut icon" href="/storage/images/TL2fjkL38e_1610595242.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('/storage/images/TL2fjkL38e_1610595242.jpg')}}" type="image/x-icon">
     <link rel="canonical" href="https://nick.vn" />
     <meta content="" name="author" />
     <meta property="og:type" content="website" />
@@ -34,8 +34,7 @@
     <link href="{{ asset('frontend/css/simple-line-icons.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('frontend/css/animate.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- END GLOBAL MANDATORY STYLES -->
     <!-- BEGIN: BASE PLUGINS  -->
     <link href="{{ asset('frontend/css/magnific.css') }}" rel="stylesheet" type="text/css" />
@@ -68,24 +67,13 @@
     <script src="{{ asset('frontend/js/bootstrap.min.js') }}" type="text/javascript"></script>
     <link href="{{ asset('frontend/css/magnific.css') }}" rel="stylesheet" type="text/css" />
     <script src='https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js'></script>
-    <link rel='stylesheet prefetch'
-        href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
-    <!-- Google Tag Manager -->
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
 
 </head>
 
 <body class="c-layout-header-fixed c-layout-header-mobile-fixed c-layout-header-topbar c-layout-header-topbar-collapse">
-    <!-- Messenger Plugin chat Code -->
-
-    <div id="fb-root"></div>
-    <!-- Your Plugin chat code -->
 
     <div class="h1tag" style="font-size:0px;text-indent:-1000px;height:0;width:0;position: absolute;z-index:-1000;padding:0;margin:0"></div>
-
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGBFK5Z" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <!-- BEGIN: LAYOUT/HEADERS/HEADER-1 -->
     <!-- BEGIN: HEADER -->

@@ -8,11 +8,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" target="_blank" href="{{ url('/') }}">Trang chủ <span
-                        class="sr-only">(current)</span></a>
+                <a class="nav-link" target="_blank" href="{{ url('/') }}">Trang chủ</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="{{ url('/home') }}">DashBoard <span class="sr-only"></span></a>
+                <a class="nav-link" href="{{ url('/home') }}">DashBoard</a>
             </li>
 
             <li class="nav-item">
